@@ -1,0 +1,137 @@
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 2px solid rgba(212, 175, 55, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 80px;
+}
+
+.countdown-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  line-height: 1;
+  background: linear-gradient(135deg, #d4af37, #4a6741);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.countdown-label {
+  font-size: 0.75rem;
+  color: #8a8a8a;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.countdown-separator {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  color: #d4af37;
+  font-weight: 300;
+  margin-top: -1rem;
+}
+
+.countdown-today {
+  padding: 3rem 2rem;
+}
+
+.countdown-message {
+  text-align: center;
+}
+
+.message-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.message-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(135deg, #d4af37, #4a6741);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.message-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #8a8a8a;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .countdown {
+    gap: 0.75rem;
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .countdown-item {
+    min-width: 60px;
+  }
+  
+  .countdown-number {
+    font-size: 1.75rem;
+  }
+  
+  .countdown-label {
+    font-size: 0.65rem;
+    letter-spacing: 1.5px;
+  }
+  
+  .countdown-separator {
+    font-size: 1.5rem;
+    margin-top: -0.75rem;
+  }
+  
+  .countdown-today {
+    padding: 2rem 1.5rem;
+  }
+  
+  .message-icon {
+    font-size: 2.5rem;
+  }
+  
+  .message-text {
+    font-size: 2rem;
+  }
+  
+  .message-subtitle {
+    font-size: 0.9rem;
+  }
+}
+

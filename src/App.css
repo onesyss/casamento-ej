@@ -1,0 +1,213 @@
+.app {
+  min-height: 100vh;
+  background: #faf9f7;
+  padding-bottom: 4rem;
+}
+
+.header {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(250, 249, 247, 0.95) 100%);
+  border-bottom: 2px solid rgba(212, 175, 55, 0.2);
+  padding: 5rem 1rem 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/images/je-1.jpg');
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  z-index: 0;
+  filter: grayscale(5%) sepia(3%);
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.36) 100%);
+  z-index: 1;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #d4af37, #4a6741, #d4af37, transparent);
+  z-index: 2;
+}
+
+.header-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.couple-initials {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 5rem;
+  font-weight: 300;
+  color: rgba(74, 103, 65, 0.2);
+  letter-spacing: 25px;
+  margin-bottom: -1.5rem;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 10px rgba(212, 175, 55, 0.1);
+}
+
+.couple-names {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #2c2c2c;
+  margin-bottom: 2.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+
+.couple-names::before {
+  content: '❦';
+  display: block;
+  font-size: 1.5rem;
+  color: #d4af37;
+  margin-bottom: 1rem;
+  opacity: 0.6;
+}
+
+.couple-names::after {
+  content: '';
+  display: block;
+  width: 150px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #d4af37 20%, #4a6741 50%, #d4af37 80%, transparent);
+  margin: 2rem auto 0;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
+}
+
+.wedding-info {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+  background: transparent;
+  border: none;
+  transition: all 0.3s ease;
+  position: relative;
+  min-width: 180px;
+}
+
+.info-item::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #d4af37, #4a6741, transparent);
+  opacity: 0.5;
+}
+
+.info-label {
+  font-size: 0.7rem;
+  color: #8a8a8a;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.info-value {
+  font-size: 1.2rem;
+  color: #2c2c2c;
+  font-weight: 500;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.main-content {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 3rem 1rem 2.5rem;
+  }
+  
+  .couple-initials {
+    font-size: 3rem;
+    letter-spacing: 15px;
+    margin-bottom: -1rem;
+  }
+  
+  .couple-names {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  
+  .couple-names::after {
+    width: 100px;
+  }
+  
+  .wedding-info {
+    gap: 2rem;
+    padding: 0;
+  }
+  
+  .info-item {
+    min-width: 140px;
+    padding: 0;
+  }
+  
+  .info-label {
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+  }
+  
+  .info-value {
+    font-size: 1rem;
+  }
+  
+  .main-content {
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  body {
+    background-attachment: scroll;
+  }
+}
+

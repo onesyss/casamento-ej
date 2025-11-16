@@ -1,0 +1,383 @@
+.repertorio {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.secao {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(250, 249, 247, 0.95) 100%);
+  border: 2px solid rgba(212, 175, 55, 0.15);
+  padding: 4rem 3rem;
+  position: relative;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.secao::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, #d4af37, #4a6741, #d4af37);
+}
+
+.secao-titulo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #2c2c2c;
+  margin-bottom: 3rem;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.secao-titulo::before {
+  content: '❦';
+  display: block;
+  font-size: 1.2rem;
+  color: #d4af37;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+.secao-titulo::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #d4af37 20%, #4a6741 50%, #d4af37 80%, transparent);
+  box-shadow: 0 2px 6px rgba(212, 175, 55, 0.3);
+}
+
+.musicas-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.musica-card {
+  background: linear-gradient(180deg, #ffffff 0%, rgba(250, 249, 247, 0.5) 100%);
+  border: 2px solid rgba(212, 175, 55, 0.2);
+  padding: 2.5rem;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.musica-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #d4af37, #4a6741);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.musica-card:hover {
+  border-color: #4a6741;
+  box-shadow: 0 8px 25px rgba(74, 103, 65, 0.2);
+  transform: translateY(-5px);
+}
+
+.musica-card:hover::before {
+  opacity: 1;
+}
+
+.musica-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.musica-numero {
+  background: linear-gradient(135deg, #d4af37, #4a6741);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+  min-width: 50px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(74, 103, 65, 0.3);
+}
+
+.musica-nome {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #2c2c2c;
+  flex: 1;
+  line-height: 1.4;
+}
+
+.musica-artista {
+  color: #8a8a8a;
+  font-size: 0.9rem;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding-left: 2.5rem;
+}
+
+.musica-momento {
+  background: linear-gradient(90deg, rgba(74, 103, 65, 0.05) 0%, rgba(212, 175, 55, 0.05) 100%);
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-left: 3px solid #4a6741;
+  margin-left: 2.5rem;
+  border-radius: 4px;
+  position: relative;
+}
+
+.musica-momento::before {
+  content: '♪';
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #4a6741;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  box-shadow: 0 2px 6px rgba(74, 103, 65, 0.3);
+}
+
+.momento-texto {
+  color: #5a5a5a;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+}
+
+.musica-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+  width: 100%;
+}
+
+.musica-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(74, 103, 65, 0.1));
+  color: #2c2c2c;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  flex: 1;
+  border-top: 2px solid rgba(212, 175, 55, 0.3);
+  font-size: 0.875rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+
+.letra-button {
+  background: linear-gradient(135deg, rgba(74, 103, 65, 0.1), rgba(212, 175, 55, 0.1));
+  border-top: 2px solid rgba(74, 103, 65, 0.3);
+}
+
+.musica-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #d4af37, #4a6741);
+  transition: left 0.3s ease;
+  z-index: 0;
+}
+
+.musica-link span {
+  position: relative;
+  z-index: 1;
+}
+
+.musica-link:hover {
+  color: #ffffff;
+  border-top-color: #4a6741;
+  box-shadow: 0 4px 15px rgba(74, 103, 65, 0.3);
+}
+
+.musica-link:hover::before {
+  left: 0;
+}
+
+.musica-letra {
+  margin: 1.5rem 0;
+  padding: 2rem;
+  background: linear-gradient(180deg, rgba(250, 249, 247, 0.8) 0%, rgba(255, 255, 255, 0.9) 100%);
+  border: 2px solid rgba(212, 175, 55, 0.2);
+  border-radius: 8px;
+  position: relative;
+}
+
+.musica-letra::before {
+  content: '♪';
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  background: linear-gradient(135deg, #d4af37, #4a6741);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(74, 103, 65, 0.3);
+}
+
+.letra-content {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  line-height: 2;
+  color: #3a3a3a;
+  text-align: center;
+  font-weight: 400;
+}
+
+.letra-linha {
+  margin: 0.5rem 0;
+  padding: 0.25rem 0;
+}
+
+.musica-video-wrapper {
+  width: 100%;
+  margin: 1.25rem 0;
+  clear: both;
+}
+
+.musica-video {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border: 1px solid #e8e6e3;
+  border-radius: 2px;
+  background: #000;
+}
+
+.musica-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.musica-video-instagram {
+  margin: 1.25rem 0;
+  padding: 2rem;
+  background: #faf9f7;
+  border: 1px solid #e8e6e3;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.musica-video-instagram p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: #5a5a5a;
+  margin-bottom: 1rem;
+}
+
+.instagram-link-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #2c2c2c;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: 1px solid #2c2c2c;
+}
+
+.instagram-link-button:hover {
+  background: #4a6741;
+  border-color: #4a6741;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .repertorio {
+    gap: 3rem;
+  }
+  
+  .secao {
+    padding: 2rem 1.5rem;
+  }
+  
+  .secao-titulo {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+  
+  .musicas-grid {
+    gap: 1.25rem;
+  }
+  
+  .musica-card {
+    padding: 1.5rem;
+  }
+  
+  .musica-nome {
+    font-size: 1.25rem;
+  }
+  
+  .musica-artista,
+  .musica-momento,
+  .musica-link,
+  .musica-video-wrapper,
+  .musica-video-instagram {
+    margin-left: 0;
+  }
+  
+  .musica-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .musica-numero {
+    padding: 0;
+  }
+}
+
