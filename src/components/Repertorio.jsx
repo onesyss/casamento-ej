@@ -550,44 +550,50 @@ Não fale que o encontra nas suas ondas de fé e não na palavra, não na palavr
       },
       {
         numero: '02',
-        nome: 'O amor que nos faz um',
-        artista: 'Marlon',
-        link: 'https://www.youtube.com/watch?v=REzhcOe9rnY&list=RDREzhcOe9rnY&start_radio=1',
-        letra: `O fogo ardeu, o anjo falou
-Mas onde está o amor?
-A glória se foi, a chuva molhou
-As palavras que ainda antes o amor me mostrou
-Nunca é tarde demais, não
-Nunca é tarde demais
-Pra descobrir o amor que vai além dos meus versos
-E parece dizer, é o Senhor quem pergunta
-Onde está você?
-Que diz que me adora, mas não estende a mão
+        nome: 'Donos dos meus Dias',
+        artista: 'Tamires',
+        link: 'https://www.youtube.com/watch?v=o0T3kEGTDWM&list=RDo0T3kEGTDWM&start_radio=1',
+        letra: `És o dono dos meus dias
+Sempre comigo, todo tempo
+És o centro da minha vida
+Que seja Teu o meu pensamento
 
-O fogo ardeu, o anjo falou
-Mas onde está o amor?
-A glória se foi, a chuva molhou
-As palavras que ainda antes o amor me mostrou
-Nunca é tarde demais, não
-Nunca é tarde demais
-Pra descobrir o amor que vai além dos meus versos
-E parece dizer, é o Senhor quem pergunta
-Onde está você?
-Você que diz que me adora, mas não estende a mão
+És o dono dos meus dias
+Sempre comigo, todo tempo
+És o centro da minha vida
+Que seja Teu o meu pensamento
 
-O amor que nos faz um
-O amor é o que nos faz um
-O amor se revela a mim
-Como uma bandeira, verdade e graça
-Um mandamento, e a nossa canção
-O amor que nos faz um
-O amor é o que nos faz um
-O amor se revela a mim
-Como uma bandeira, verdade e graça
-Um mandamento, e a nossa canção
-O amor vem como alegria
-O amor vem
-O amor vem como alegria`
+E se eu me desviar
+Fala comigo Senhor
+Com todo o Teu amor
+Não me importa a hora ou lugar
+Que toda vida em mim seja pra Te adorar
+Vejo, sinto, penso para o Teu louvor
+Choro, canto, vivo para Ti, Senhor
+
+És o dono dos meus dias
+És o dono dos meus dias
+
+Tudo que sou é Teu
+Tudo que quero ser é Teu
+O meu prazer esta em Ti
+Que meu louvor alegre a Ti
+
+Tudo que sou é Teu
+Todo o meu tempo seja Teu
+O meu prazer esta em Ti
+Que meu louvor alegre a Ti
+
+Para o Teu louvor
+Choro, canto, vivo para Ti, Senhor
+Vejo, sinto, penso para o Teu louvor
+Choro, canto, vivo para Ti, Senhor
+
+Choro, canto, vivo para Ti, Senhor
+
+És o dono dos meus dias
+És o dono dos meus dias
+Dono dos meus dias`
       },
       {
         numero: '03',
