@@ -302,7 +302,7 @@ I'm gonna sing of the goodness of God`
       {
         numero: '03',
         nome: 'Só o começo',
-        artista: 'Tamires & Jeff',
+        artista: 'Tamires',
         link: 'https://www.youtube.com/watch?v=1MCvxwaAnlo&list=RD1MCvxwaAnlo&start_radio=1',
         momento: 'Padrinhos',
         letra: `Eu aprendi qual é o valor de um sonho alcançar
@@ -400,7 +400,7 @@ How great Thou art`
         numero: '07',
         nome: 'Endless Love',
         artista: 'Marlon & Tamires',
-        link: 'https://www.youtube.com/watch?v=nScV1qu-MZQ&list=RDnScV1qu-MZQ&start_radio=1',
+        link: 'https://www.youtube.com/watch?v=gF6w21T_2e8&list=RDgF6w21T_2e8&start_radio=1',
         momento: 'ALIANÇA (Beijo, mesma música da aliança)',
         letra: `My love
 There's only you in my life
@@ -448,7 +448,7 @@ My endless love`
       },
       {
         numero: '08',
-        nome: 'Abenção',
+        nome: 'A benção',
         artista: 'Tamires',
         link: 'https://www.youtube.com/watch?v=Iou-YZSQ0gM&list=RDIou-YZSQ0gM&start_radio=1',
         momento: 'Louvor de agradecimento no fim da cerimônia',
@@ -592,7 +592,7 @@ O amor vem como alegria`
       {
         numero: '03',
         nome: 'Eu te agradeço',
-        artista: 'Jeff',
+        artista: 'Marlon',
         link: 'https://www.youtube.com/watch?v=eiJ-9wg5W9g&list=RDeiJ-9wg5W9g&start_radio=1',
         letra: `Hoje acordei com a intenção
 De te falar tudo que eu vi
@@ -619,7 +619,7 @@ E me fez viver`
       {
         numero: '04',
         nome: 'O nosso general é cristo',
-        artista: 'Marlon, Tamires e Jeff',
+        artista: 'Marlon e Tamires',
         link: 'https://www.youtube.com/watch?v=dS35Xhf2UeI&list=RDdS35Xhf2UeI&start_radio=1',
         letra: `Pelo Senhor, marchamos sim
 O Seu exército, poderoso é
