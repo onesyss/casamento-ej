@@ -626,7 +626,7 @@ E me fez viver`
         numero: '04',
         nome: 'O nosso general é cristo',
         artista: 'Marlon e Tamires',
-        link: 'https://www.youtube.com/watch?v=dS35Xhf2UeI&list=RDdS35Xhf2UeI&start_radio=1',
+        link: 'https://www.youtube.com/watch?v=AMycd3y3Vns&list=RDHyzOF2P-2wM&index=2',
         letra: `Pelo Senhor, marchamos sim
 O Seu exército, poderoso é
 E Sua glória será vista em toda terra
